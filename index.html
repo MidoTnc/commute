@@ -172,6 +172,30 @@
             <div class="bg-slate-100 dark:bg-slate-900 p-4 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
                 <h3 class="font-bold text-slate-800 dark:text-slate-100"><i class="fas fa-key text-amber-500 mr-2"></i>API 키 설정 (로컬저장)</h3>
                 <button id="btnCloseSettings" class="text-slate-400 hover:text-slate-600"><i class="fas fa-times text-lg"></i></button>
+            </div>
+            <div class="p-5 max-h-[60vh] overflow-y-auto">
+                <p class="text-[10px] text-slate-500 mb-4 leading-relaxed">
+                    입력하신 API 키는 기기에만 저장됩니다. 실시간 지도 위치 시뮬레이션을 위해 일부는 목업 데이터를 사용합니다.
+                </p>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">🚌 공공데이터포털 (버스 위치/도착)</label>
+                        <input type="text" id="keyBus" placeholder="일반 인증키 (Decoding) 입력" class="w-full text-xs p-2 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-white outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">🚇 서울 열린데이터 광장 (지하철 실시간)</label>
+                        <input type="text" id="keySubway" placeholder="지하철 API 인증키 입력" class="w-full text-xs p-2 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-white outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">🇰🇷 한국 기상청 API</label>
+                        <input type="text" id="keyKma" placeholder="단기예보조회 인증키 입력" class="w-full text-xs p-2 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-white outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">☀️ OpenWeather API</label>
+                        <input type="text" id="keyOpenWeather" placeholder="API Key 입력" class="w-full text-xs p-2 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-white outline-none focus:border-blue-500">
+                    </div>
+                </div>
+            </div>
             <div class="p-4 bg-slate-50 dark:bg-slate-800/80 border-t border-slate-200 dark:border-slate-700">
                 <button id="btnSaveSettings" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-lg transition shadow-md">
                     저장 및 적용하기
